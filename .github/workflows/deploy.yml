@@ -1,4 +1,4 @@
-name: Ejemplo de GitHub Action
+name: deploy
 
 on:
   push:

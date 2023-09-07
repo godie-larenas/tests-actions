@@ -1,0 +1,20 @@
+name: Ejemplo de GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código fuente
+        uses: actions/checkout@v2
+
+      # Agrega aquí los pasos de tu acción
+
+      # Este ejemplo solo imprime un mensaje
+      - name: Ejecutar acción
+        run: echo "Esta acción se ejecutará en rama main"

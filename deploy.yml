@@ -3,7 +3,7 @@ name: Ejemplo de GitHub Action
 on:
   push:
     branches:
-      - '*'
+      - main
 
 jobs:
   build:
@@ -17,4 +17,4 @@ jobs:
 
       # Este ejemplo solo imprime un mensaje
       - name: Ejecutar acción
-        run: echo "Esta acción se ejecutará en todas las ramas excepto en main"
+        run: echo "Esta acción se ejecutará en rama main"
